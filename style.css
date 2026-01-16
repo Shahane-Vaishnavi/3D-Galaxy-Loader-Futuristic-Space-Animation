@@ -60,4 +60,20 @@ body {
     0%, 100% { transform: translate(-50%, -50%) rotateZ(0deg); }
     50% { transform: translate(-50%, -50%) rotateZ(180deg); }
 }
+.spark {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0.8;
+    animation: fadeout 0.5s forwards;
+}
 
+@keyframes fadeout {
+    to {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
